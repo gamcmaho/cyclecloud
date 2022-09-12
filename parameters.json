@@ -1,0 +1,73 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "northeurope"
+        },
+        "bastion_name": {
+            "value": "bastion-hpc"
+        },
+        "pip_bastion_name": {
+            "value": "pip-bastion-hpc"
+        },
+        "vnet_hpc_name": {
+            "value": "vnet-hpc"
+        },
+        "vnet_hpc_prefix": {
+            "value": "10.0.0.0/16"
+        },
+        "snet_bastion_prefix": {
+            "value": "10.0.1.0/24"
+        },
+        "snet_user_prefix": {
+            "value": "10.0.2.0/24"
+        },
+        "snet_compute_prefix": {
+            "value": "10.0.3.0/24"
+        },
+        "snet_cycle_prefix": {
+            "value": "10.0.4.0/24"
+        },
+        "vm_cycle_name": {
+            "value": "vm-cycle"
+        },
+        "vm_cycle_nic_name": {
+            "value": "nic-vm-cycle"
+        },
+        "vm_cycle_size": {
+            "value": "Standard_D2s_v3"
+        },
+        "dataDisks": {
+            "value": [
+                {
+                    "lun": 0,
+                    "createOption": "fromImage",
+                    "deleteOption": "Detach",
+                    "caching": "None",
+                    "writeAcceleratorEnabled": false,
+                    "id": null,
+                    "name": "[concat(parameters('vm_cycle_name'),'_dataDisk_1')]",
+                    "storageAccountType": "Premium_LRS",
+                    "diskSizeGB": null,
+                    "diskEncryptionSet": null
+                }
+            ]
+        },
+        "vm_user_name": {
+            "value": "vm-user"
+        },
+        "vm_user_nic_name": {
+            "value": "nic-vm-user"
+        },
+        "vm_user_size": {
+            "value": "Standard_D2s_v3"
+        },
+        "private_dns_zone_name": {
+            "value": "privatelink.blob.core.windows.net"
+        },
+        "storage_account_name": {
+            "value": "storacccyclecloud"
+        }
+    }
+}
