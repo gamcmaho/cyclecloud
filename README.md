@@ -101,7 +101,4 @@ j. Leave Storage Container as "cyclecloud"
 k. Click Save, then Back to clusters
 <br>
 <br>
-Nb.  After saving, follow link in top left hand corner
-<br>
-<br>
 <h3>Congratulations, you're now in a position to deploy your first Azure HPC Cluster</h3>
