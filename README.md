@@ -17,7 +17,10 @@ Nb. Click the icon to the right of the Search bar (top centre) and provide manda
 az vm image terms accept --urn azurecyclecloud:azure-cyclecloud:cyclecloud8:latest
 <br>
 <br>
-<h3>4. Accept the "Alma Linux Terms and Conditions" by running:</h3>
+<h3>4. Accept the "Alma Linux Terms and Conditions" by running:  [Optional]</h3>
+Nb. Optional, depending on whether you plan to make use of Cluster Nodes of type Alma Linux
+<br>
+<br>
 az vm image terms accept --urn almalinux:almalinux-hpc:8_5-hpc:latest
 <br>
 <br>
