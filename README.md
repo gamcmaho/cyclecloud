@@ -1,4 +1,4 @@
-# Azure CycleCloud deployment using BICEP
+# Bicep deployment of Azure CycleCloud
 
 <h3>Please refer to the Azure CycleCloud architecture below.  We will automate the deployment of this solution using BICEP, as a Domain Specific Language (DSL).
 <br>
